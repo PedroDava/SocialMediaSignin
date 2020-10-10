@@ -1,0 +1,4 @@
+#Sat Oct 10 09:08:52 CAT 2020
+base.0=/Users/pedrodava/Desktop/Development-Moovi/Flutter/flock_payment/flock_payment/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
