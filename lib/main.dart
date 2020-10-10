@@ -1,6 +1,6 @@
 import 'package:flock_payment/views/login.dart';
 import 'package:flutter/material.dart';
-import 'views/creatorpage.dart';
+// import 'views/creatorpage.dart';
 
 void main() {
   runApp(MyApp());
