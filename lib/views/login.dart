@@ -8,6 +8,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   bool _isVisible = true;
+  var buttonShape = RoundedRectangleBorder(borderRadius: BorderRadius.circular(80));
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +30,7 @@ class _LoginState extends State<Login> {
               ),
             ),
           ),
-          /*SizedBox(height: 60),
+          SizedBox(height: 60),
           Visibility(
             child: signInInformation(),
             visible: !_isVisible,
@@ -37,7 +38,7 @@ class _LoginState extends State<Login> {
           Visibility(
             child: signInMethod(),
             visible: _isVisible,
-          ),*/
+          ),
         ],
       ),
     );
@@ -110,7 +111,7 @@ class _LoginState extends State<Login> {
         SignInButton(
           Buttons.Google,
           text: "Sign in  with  Google",
-          onPressed: () {},
+          onPressed: () {},shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         ),
         SizedBox(height: 20),
         Text(
@@ -122,6 +123,8 @@ class _LoginState extends State<Login> {
           width: 200,
           child: Row(
             children: [
+
+
               SignInButtonBuilder(
                 text: 'with Email',
                 icon: Icons.email,
@@ -132,22 +135,23 @@ class _LoginState extends State<Login> {
                     _isVisible = !_isVisible;
                   });
                 },
-                backgroundColor: Colors.white,
+                backgroundColor: Colors.white,shape: buttonShape
+
               ),
               SignInButton(
                 Buttons.Facebook,
                 mini: true,
-                onPressed: () {},
+                onPressed: () {},shape: buttonShape,
               ),
               SignInButton(
                 Buttons.Apple,
                 mini: true,
-                onPressed: () {},
+                onPressed: () {},shape: buttonShape,
               ),
               SignInButton(
                 Buttons.GitHub,
                 mini: true,
-                onPressed: () {},
+                onPressed: () {},shape: buttonShape,
               )
             ],
           ),
