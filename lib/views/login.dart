@@ -161,10 +161,10 @@ class _LoginState extends State<Login> {
           onPressed: () {
             _googleSignIn.signIn().then((response) {
               setState(() {
-                name = response.displayName;
+                /*  name = response.displayName;
                 email = response.email;
                 photoUrl = response.photoUrl;
-                _isVisible = false;
+                _isVisible = false;*/
               });
             }).catchError((onError) => print(onError));
           },
